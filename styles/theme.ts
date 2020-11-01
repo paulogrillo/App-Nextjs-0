@@ -27,6 +27,7 @@ const customTheme: DefaultTheme = {
         purple: {
             ...theme.colors.purple,
             500: '#8257e5',
+            700: '#4733A1'
         },
         gray: {
             ...theme.colors.gray,

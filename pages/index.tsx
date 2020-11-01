@@ -1,15 +1,13 @@
 // import Head from 'next/head'
 
-import { Heading, Grid, Flex, ModalHeader, Image, } from '@chakra-ui/core';
+import { Heading, Grid, Flex, ModalHeader, Image, Text, Box, Button } from '@chakra-ui/core';
+import { GrContact } from 'react-icons/gr';
 
 import MenuNavBar from './_components/MenuNavBar';
-import SliderHome from './_components/SliderHome';
-
 import ProjetosPrincipais from './_components/ProjetosPrincipais';
 
 export default function Home() {
   return (
-    
     
      <Grid
      as="main"
@@ -18,7 +16,7 @@ export default function Home() {
      templateRows="1fr 800px 1fr"
      templateAreas="
      '. . menu .'
-     '. . main .'
+     ' . main . .'
      '. projects . .'
      '. . . .'
      "
@@ -32,30 +30,62 @@ export default function Home() {
         <MenuNavBar />
       </Flex>
       
-      <Flex 
-      gridArea="1fr 1200px 1fr "
-      position="absolute"
-      width="100vw"
-      height="78vh"
-      marginTop="150px"
+    <Box
+       position="absolute"
+       top="310px"
+       left="450px" 
+        >
 
-      top="0"
-      right="0"
-     
+        <Heading as="h1" size="2xl"
+        fontWeight="500"
+        color="gray-700" 
+        >
+            Marketing, Performance & <br></br>Transformação Digital!
+         </Heading>
+        <Flex
+         
+         marginTop="20px"
+        >
+          <Button size="lg" color="#4733A1" mt="24px" fontSize="20px"
+          backgroundColor="f1f1f1"
+          >
+            <GrContact />
+            <Text
+            marginLeft="20px"
+            >
+              Solicitar um orçamento!
+            </Text>
+          </Button>
+        </Flex>
+    </Box>
+
+    <Box
+       position="absolute"
+  
+       top="350px"
+       left="800px"
+
+       >
+         
+      <Image 
+      src="https://i.ibb.co/tK5896H/ImgHome.png" 
+      alt="Performance E Transformação Digital!" 
+      w="600px"
+      h="410px"
       
-      >
-            <Image
+      />
+      </Box>
+      <Grid 
+      position="absolute"
+      bottom="0"
+      right="0"
+      left="0"
 
-            src="https://bit.ly/2jYM25F"
-            alt="Woman paying for a purchase"
-            opacity={0.8}
-            />
-      </Flex>
-      <Flex
-      gridArea="projects"
+      marginBottom="25px"
+      marginLeft="225px"
       >
-      <ProjetosPrincipais />
-      </Flex>
+        <ProjetosPrincipais />
+      </Grid>
      </Grid>
     
   )
