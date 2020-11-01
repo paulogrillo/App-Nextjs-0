@@ -13,7 +13,7 @@ function ProjetosPrincipais() {
     >
     <Box display={{ md: "flex" }} marginTop="50px">
      {/* --- BOX 1 --- */}
-        <Box flexShrink="0">
+        <Box >
             <Image
             rounded="lg"
             width={{ md: 40 }}
@@ -50,7 +50,7 @@ function ProjetosPrincipais() {
         </Box>
         {/* --- BOX 2 --- */}
     
-     <Box flexShrink="0">
+     <Box>
             <Image
             rounded="lg"
             width={{ md: 40 }}
@@ -85,7 +85,7 @@ function ProjetosPrincipais() {
             </Text>
         </Box>
         {/* --- BOX 4 --- */}
-        <Box flexShrink="0">
+        <Box>
             <Image
             rounded="lg"
             width={{ md: 40 }}
@@ -120,7 +120,7 @@ function ProjetosPrincipais() {
             </Text>
         </Box>
         {/* --- BOX 5 --- */}
-        <Box flexShrink="0">
+        <Box>
             <Image
             rounded="lg"
             width={{ md: 40 }}
